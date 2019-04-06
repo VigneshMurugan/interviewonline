@@ -22,7 +22,7 @@ function OpenPageLayout(props) {
 
 
   if (screenWidth < 1000) {
-    return <div className={styles.warning}>not good to be use in small screen，open a larger screen</div>
+    return (<div className={styles.warning}>not good to be use in small screen，open a larger screen</div>)
   }
 
   if (locationPathname !== '/' && routes.every(r => r.path !== locationPathname)) {
@@ -44,7 +44,7 @@ function OpenPageLayout(props) {
       <Layout className={styles.layout}>
         <Layout.Header className={styles.header}>
           <img src={logoSrc} style={{ width: '70px' }} alt="" />
-          <h2>javascript</h2>
+          <h2>Enquero Exam</h2>
         </Layout.Header>
         <Layout className={styles.main}>
           <Layout.Sider width={300} style={{ background: '#fff' }}>

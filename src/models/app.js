@@ -10,7 +10,7 @@ export default extend(commonModel, {
   state: {
     locationPathname: '',
     locationQuery: {},
-    pageTitle: 'javascript',
+    pageTitle: 'Enquero Exam',
     screenWidth: window.innerWidth,
     screenHeight: window.innerHeight
   },
@@ -26,7 +26,7 @@ export default extend(commonModel, {
         })
       })
     },
-    screenResize({ dispatch, history }) {
+    screenResize({ dispatch }) {
       const screenResizeHandler = () => {
         const { innerWidth, innerHeight } = window
         dispatch({

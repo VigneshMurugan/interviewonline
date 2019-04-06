@@ -22,7 +22,7 @@ class Exam extends React.Component {
     super(props)
 
     this.state = {
-      visible: false,
+      visible: true,
       code: ''
     }
   }
@@ -95,7 +95,7 @@ class Exam extends React.Component {
           shape="circle"
           icon="eye"
           className={styles.verifyBtn}
-          onClick={() => this.setState({ visible: true })}
+          onClick={() => this.setState({ visible: !this.state.visible })}
         />
         <Content value={this.state.code} onChange={code => this._onCodeChange(code, route)} />
         <CaseRunner
